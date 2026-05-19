@@ -1,8 +1,36 @@
-bin/
-obj/
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio / Rider
 .vs/
+.idea/
 *.user
+*.userosscache
 *.suo
+*.sln.docstates
+
+# NuGet
+*.nupkg
+**/packages/*
+project.lock.json
+project.fragment.lock.json
+
+# Database (runtime)
 *.db
 *.sqlite
 *.sqlite3
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
