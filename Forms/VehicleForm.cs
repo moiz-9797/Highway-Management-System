@@ -6,21 +6,21 @@ namespace HighwayManagementSystem;
 // Highway / Vehicle record form - CRUD, Search, auto pass detection, auto date
 public partial class VehicleForm : Form
 {
-    private int selectedId = 0;
+    private int selectedId = 0; // selected row ka id store krta hai, usay autofill krta hai upar textbox may
 
-    // Pass type found from TollPass table (auto detected)
-    private string detectedPassType = "No Pass";
+    
+    private string detectedPassType = "No Pass"; // Pass type found from TollPass table (auto detected) 
 
     public VehicleForm()
     {
         InitializeComponent();
-        LoadRecords();
+        LoadRecords(); // fetch records from databse and show in data gridview
     }
 
     // Load all records into DataGridView using SELECT query
     private void LoadRecords()
     {
-        using SqliteConnection conn = DatabaseHelper.GetConnection();
+        using SqliteConnection conn = DatabaseHelper.GetConnection(); // establish connection between sqlite database and data grid view
 
         string sql = @"SELECT Id, VehicleNumber, DriverName, VehicleType, TollAmount, EntryDate, PassType
                        FROM HighwayRecords";
