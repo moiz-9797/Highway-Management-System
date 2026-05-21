@@ -3,8 +3,8 @@ namespace HighwayManagementSystem;
 public partial class LoginForm : Form
 {
     // Login details (simple hard-coded check for demo)
-    private string correctUser = "HighwayAdmin"; // idher humne username rakh kr dia hai
-    private string correctPass = "Highway123"; // idher humne password rakh dia hai
+    private string correctUser = "moiz9797"; // idher humne username rakh kr dia hai
+    private string correctPass = "1122334455"; // idher humne password rakh dia hai
 
     public LoginForm()
     {
